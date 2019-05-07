@@ -151,3 +151,48 @@ i{
    font-size: 30px;
    padding-left: 20px ; 
 }
+
+/*blog content style*/
+
+.blog-content-img{
+    background: url(../images/business1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.main-post{
+    display: grid;
+    grid-gap: 30px;
+    margin: 30px;
+    text-align: center;
+}
+
+.back-link{
+    text-align: center;
+}
+
+.subpost{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 20px;
+}
+
+.box-2{
+    height: 100px;
+}
+
+.box-2{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sub-blog-img{
+    height: 100px;
+    width: 200px;
+}
+
+.discription{
+    padding: 20px 10px;
+    text-align: center;
+}
