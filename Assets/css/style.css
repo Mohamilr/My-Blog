@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color:  blue;
+}
+
+.sublink li{
+    display: inline-block;
+    height: 40px;
+}
+
+.brand{
+   display: block;
+   padding: 10px; 
+   text-decoration: none;
+
+}
+
+.sublink li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
