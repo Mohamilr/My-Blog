@@ -26,3 +26,27 @@
     padding: 10px;
     text-decoration: none;
 }
+
+/*signin/up style*/
+
+.form-container{
+    margin: 8em;
+}
+
+.sign{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.form{
+    padding: 30px 0;
+}
+
+.input{
+    margin: 10px 0;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
