@@ -59,6 +59,42 @@ a{
     text-align: center;
 }
 
+/*contact style*/
+
+.contact-container{
+    text-align: center;
+    margin: 5em;
+}
+
+.contact-form{
+   padding: 5em;
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-gap: 1rem;
+   grid-template-areas:
+   "one two "
+   "three three";
+}
+
+.contact-input{
+    grid-area: one;
+    padding: 40px;
+}
+
+.contact-text{
+    grid-area: two;
+}
+
+.contact-submit{
+    grid-area: three;
+}
+
+.contact-submit input{
+    padding: 3px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
 /*blog post style*/
 
 .date{
@@ -137,7 +173,6 @@ a{
 .two {
   grid-area: two;
 }
-
 
 .three {
   grid-area: three;
