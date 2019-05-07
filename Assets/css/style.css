@@ -18,13 +18,21 @@
    display: block;
    padding: 10px; 
    text-decoration: none;
-
 }
 
 .sublink li a{
     display: block;
     padding: 10px;
     text-decoration: none;
+}
+
+.exit{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+a{
+   text-decoration: none; 
 }
 
 /*signin/up style*/
@@ -49,4 +57,97 @@
     border: 2px solid black;
     border-radius: 5px;
     text-align: center;
+}
+
+/*blog post style*/
+
+.date{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: green;
+    position: fixed;
+    height: 400px;
+    width: 220px;
+    overflow: scroll;
+}
+
+.date-head{
+    padding: 10px;
+    border: 3px solid blue;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.blog-container{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1.5fr 7fr;
+    grid-gap: 3em; 
+    position: relative;
+}
+
+.blog-news{
+    display: grid;
+    grid-template-columns: 1fr 
+    1fr 1fr;
+    grid-gap: 10px;
+    position: relative;
+}
+
+.sub-header{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.box{
+    height: 200px;
+    overflow: hidden;
+}
+
+.images{
+    width: 320px;
+    height: 160px; 
+    transition: all 2s ease-out;
+}
+
+.images:hover{
+    transform: scale(1.05);
+}
+
+/*footer*/
+.footer-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-template-rows: 1fr 1fr ;
+   grid-gap: 0.5rem;
+   grid-template-areas:
+   "one two "
+   "three three";
+   background-color: aqua;
+   padding: 10px 0 0;
+}
+ 
+
+.one {
+ grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+
+.three {
+  grid-area: three;
+}
+
+.three, .one, .two{
+    text-align: center;
+}
+
+i{
+   font-size: 30px;
+   padding-left: 20px ; 
 }
