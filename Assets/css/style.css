@@ -54,6 +54,37 @@ h1, p {
     color: black;
 }
 
+/*index page style*/
+
+.banner{
+   background: url("../images/sport1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 400px;
+}
+
+.discription-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+
+.side-img{
+    height: 300px;
+    width: 500px;
+}
+
+.img-discription{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.head{
+    text-align: center;
+    margin: 2em;
+    
+}
 
 /*signin/up style*/
 
