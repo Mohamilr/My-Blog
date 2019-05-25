@@ -207,8 +207,13 @@ img{
     grid-gap: 30px;
     margin: 30px;
     text-align: center;
+    text-align: justify;
 }
 
+.main-post h1{
+    text-align: center;
+    text-transform: uppercase;
+}
 .back-link{
     text-align: center;
 }
@@ -340,7 +345,7 @@ img{
     flex-direction: column;
     text-align: center;
     position: absolute;
-    width: 19em;  
+    width: 100%;  
 }
 
 .date{
@@ -511,7 +516,7 @@ img{
         margin-top: 4px;
         text-align: center;
         position: absolute;
-        width: 22.3em;  
+        width: 100%;  
     }
     
     .date{
@@ -598,7 +603,6 @@ img{
     }
     
 
-
     /* 322 */
     @media only screen and (max-width: 322px) {
         .duplicate{
@@ -631,7 +635,7 @@ img{
         /* flex-direction: csolumn; */
         text-align: center;
         position: absolute;
-        width: 19em;  
+        width: 100%;  
     }
 
    /* blog content style */
