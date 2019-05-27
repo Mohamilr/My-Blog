@@ -6,7 +6,9 @@
 
 .navbar{
     display: flex;
-    justify-content: space-between; background-color:  #00c4cc;  
+    justify-content: space-between; background-color:  #00c4cc; 
+    width: 100% !important;
+    
 }
 
 .sublink li{
@@ -115,12 +117,31 @@ img{
     align-content: center;
 }
 
+.contact-input {
+    margin: 3%;
+}
+
 .input{
     margin: 10px 0;
     height: 30px;
     border: 2px solid #00c4cc;
     border-radius: 5px;
     text-align: center;
+}
+
+.contact-text textarea{
+    margin-bottom: 3%;
+    border: 2px solid #00c4cc;
+    border-radius: 5px;
+}
+
+
+.contact-submit input{
+    padding: 10px 20px;
+    border: 2px solid #00c4cc;
+    border-radius: 5px;
+    color: #00c4cc;
+    background-color: #ffffff;
 }
 
 .social-icons ul{
@@ -289,12 +310,6 @@ img{
     height: 310px;
 }
 
-.contact-container h1{
-    font-size: 30px;
-    text-align: center;
-    margin-top: 35px;
-}
-
 .about-head{
     font-size: 40px; 
     margin-bottom: 2em;
@@ -332,6 +347,16 @@ img{
     font-size: 5em;
 }
 
+.contact-container h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.contact-text textarea{
+    width: 100%;
+}
+
 /*archives style*/
 
 .blog-container{
@@ -364,22 +389,22 @@ img{
 .sub-header{
     margin: 10px 0;
     text-align: center;
-    margin-top: 7em;
 }
     
 .second{
-     margin: 10px 0;
+    margin: 10px 0;
     text-align: center;     
 }   
 
 .box{
     height: 200px;
     overflow: hidden;
-    margin-top: 20px
+    margin-top: 20px;
+    width :100%;
 }
 
 .images{
-    width: 320px;
+    width: 100%;
     height: 160px; 
     transition: all 2s ease-out;
 }
@@ -504,6 +529,11 @@ img{
         font-size: 5em;
     }
     
+.contact-text textarea{
+    width: 100%;
+}
+
+    
     /*archives style*/
     
     .blog-container{
@@ -550,7 +580,7 @@ img{
     }
     
     .images{
-        width: 350px;
+        width: 100%;
         height: 160px; 
         transition: all 2s ease-out;
     }
@@ -604,7 +634,7 @@ img{
     
 
     /* 322 */
-    @media only screen and (max-width: 322px) {
+    @media only screen and (max-width: 375px) {
         .duplicate{
             position: absolute;
             height: 300px;
@@ -628,11 +658,15 @@ img{
             width: 16em;
             height: 310px;
         }
+        
+        /*contact style */
+ .contact-text textarea{
+    width: 100%;
+}
 
        /*archives style*/
     .date-container{
         margin-top: 4px;
-        /* flex-direction: csolumn; */
         text-align: center;
         position: absolute;
         width: 100%;  
@@ -643,4 +677,6 @@ img{
         height: 100px;
         width: 160px;
     }
+
+
     }  
