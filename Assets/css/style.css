@@ -276,7 +276,7 @@ img{
 
 
 /*media query 320 iphonee 5 */
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 320px) {
 /*index page*/
     
 .container{
@@ -736,7 +736,20 @@ img{
     }
 
     @media only screen and (max-width: 720px){
-    .date{
+        .blog-container{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .date-container{
+            margin-top: 4px;
+            text-align: center;
+            position: absolute;
+            width: 20px;
+            /* width: 100% !important;   */
+        }
+        .date{
         width: 250px;
     }
     }
