@@ -276,7 +276,7 @@ img{
 
 
 /*media query 320 iphonee 5 */
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
 /*index page*/
     
 .container{
@@ -373,7 +373,8 @@ img{
     margin-top: 4px;
     text-align: center;
     position: absolute;
-    width: 100% !important;  
+    width: 20px;
+    /* width: 100% !important;   */
 }
 
 .date{
@@ -381,6 +382,7 @@ img{
     padding: 12px;
     border: 2px solid #00c4cc;
     border-radius: 5px;
+    width: 90%;
 }
 
 .blog-news{
@@ -551,7 +553,8 @@ img{
     margin-top: 4px;
     text-align: center;
     position: absolute;
-    width: 100% !important;  
+    /* width: 100% !important;  */
+    width: 300px;  
 }
     
     .date{
@@ -559,6 +562,7 @@ img{
         padding: 12px;
         border: 2px solid #00c4cc;
         border-radius: 5px;
+        width: 30px;
     }
     
     .blog-news{
@@ -637,7 +641,7 @@ img{
     
 
     /* ipad... */
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (min-width: 768px) {
         .duplicate{
             position: absolute;
             height: 300px;
@@ -676,10 +680,8 @@ img{
     }
  
     .date-container{
-    margin-top: 4px;
-    text-align: center;
-    position: absolute;
-    width: 100% !important;  
+    width: 300px !important;
+    /* width: 100% !important;   */
     }
     
     .date{
@@ -719,10 +721,22 @@ img{
     }  
     
     @media only screen and (max-width: 768px){
-    
+    .date-container{
+        text-align: center;
+        position: absolute;
+        width: 100% !important;  
+    }
+            
+
    /* blog content style */
     .discription{
     padding: 1px 5px;
     text-align: center;
     }     
+    }
+
+    @media only screen and (max-width: 720px){
+    .date{
+        width: 250px;
+    }
     }
