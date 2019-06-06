@@ -365,6 +365,8 @@ img{
 
 .create-container textarea{
     font-size: 20px;
+    border: 2px solid #00c4cc;
+    border-radius: 5px;
 }
 
 .create-btn{
@@ -390,7 +392,6 @@ img{
     padding: 20px 0 3em;
     display: grid;
     grid-gap: 10em;
-/*    grid-template-rows: 1fr 2fr;*/
 }
 
 #pg-dt-date{
