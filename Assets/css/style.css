@@ -130,13 +130,13 @@ img{
     height: 30px;
     border: 2px solid #00c4cc;
     border-radius: 5px;
-    text-align: center;
 }
 
 .contact-text textarea{
     margin-bottom: 3%;
     border: 2px solid #00c4cc;
     border-radius: 5px;
+    font-size: 15px;
 }
 
 
@@ -301,6 +301,7 @@ img{
     margin: 0 !important;
     height: 2em !important;
     width: 15em;
+    text-align: center;
 }
 
 /*footer*/
@@ -377,6 +378,61 @@ img{
     background-color: #ffffff;
 }
 
+/*post-details page style*/
+.page-details-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 0.5fr;
+    grid-gap: 1em;
+}
+
+.page-dt-left{
+    text-align: center;
+    padding: 20px 0 3em;
+    display: grid;
+    grid-gap: 10em;
+/*    grid-template-rows: 1fr 2fr;*/
+}
+
+#pg-dt-date{
+    position: fixed;
+    left: 5%;
+    color: #00c4cc;
+}
+
+#pg-dt-social{
+    position: fixed;
+    top: 10em;
+    left: 7%;
+}
+
+#pg-dt-social ul li{
+    list-style: none;
+    margin-bottom: 3em;
+}
+
+#pg-dt-social i{
+    font-size: 25px;
+}
+
+.page-dt-right{
+    text-align: center;
+}
+
+.page-dt-right img{
+    margin-top: 2em;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.page-dt-right h3{
+    margin: 20px;
+}
+
+.page-dt-right p{
+    padding: 0 30px;
+    text-align: justify;
+}
 
 @media only screen and (max-width: 720px) {
     /*index page*/
