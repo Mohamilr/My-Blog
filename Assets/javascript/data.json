@@ -1,0 +1,16 @@
+allPosts : [
+    {
+        "id": 1,
+        "title": "man",
+        "date": "2/3/19",
+        "image": "https://imaageurl",
+        "content": "lorem ipsum ..."
+    },
+    {
+        "id": 1,
+        "title": "man",
+        "date": "2/3/19",
+        "image": "https://imaageurl",
+        "content": "lorem ipsum ..."
+    }
+];

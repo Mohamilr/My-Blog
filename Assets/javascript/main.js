@@ -46,10 +46,39 @@ submit.addEventListener("click", signIn);
 //HOME DOM
 //li
 const displayName = document.getElementById("user");
+
 //ul
 const show = document.querySelector(".sublink");
-displayName.appendChild(document.createTextNode(userName.value));
+
+console.log('---->', displayName);
+// displayName.appendChild(
+//     document.createTextNode(userName.value)
+// );
 displayName.className = ("active");
 show.appendChild(displayName);
 // show.insertAdjacentText("beforebegin", displayName);
 
+localStorage.setItem('user', {});
+
+localStorage.getItem('user');
+
+localStorage.clear();
+
+const posts = [];
+
+function createPost() {
+    // Data.value,
+
+
+    const content = {
+        title: title.value,
+        data: smsmsk
+    };
+
+    posts.push(content);
+}
+
+
+function getPosts() {
+    for{}
+}
