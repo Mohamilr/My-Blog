@@ -225,11 +225,6 @@ img{
     transform: scale(1.02);
 }
 
-.cont{
-    display: inline-block;
-}
-
-
 /*blog content style*/
 
 .blog-content-img{
@@ -335,7 +330,7 @@ img{
 }
 
 #user{
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 /*create post style*/

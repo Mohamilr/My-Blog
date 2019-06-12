@@ -36,8 +36,8 @@
 <!--      -->
        <div class="create-container">
            <div  class="create-box"><h1>Date:</h1><input type="date" class="inputs"  required></div>
-           <div  class="create-box"><h1>Title:</h1><input type="text" placeholder="write a title" class="inputs" maxlength="40" required></div>
-           <div  class="create-box"><h1>Discription:</h1><input type="text" placeholder="write a short discription" class="inputs" maxlength="40" required></div>
+           <div  class="create-box"><h1>Title:</h1><input type="text" placeholder="write a title" class="inputs" id="title" maxlength="40" required></div>
+           <div  class="create-box"><h1>Discription:</h1><input type="text" placeholder="write a short discription" class="inputs" id="discription" maxlength="40" required></div>
            <div  class="create-box"><h1>Upload Image:</h1><input type="file" accept="image/*" id="image-upload" required></div>
        <div>
            <textarea name="" id="" cols="50" rows="15" placeholder="your text context goes here..." required></textarea>
@@ -54,6 +54,44 @@
             </div>
         </div>
     </footer>  
-        <script src="../main.js"></script>
+    <script>
+    //declarations
+const date = document.querySelector('input[type = "date"]');
+const title = document.querySelector("#title");
+const discription = document.querySelector("#discription");
+const image = document.querySelector('input[type = "file"]');
+const createPost = document.querySelector(".create-btn");
+const type = document.getElementsByTagName("textarea")[0];
+image.className = ".page-dt-right img";
+function create(e){
+    e.preventDefault();
+    const divE = document.createElement("div");
+    const hTag = document.createElement("h1");
+    const theImg = document.createElement("img");
+    const typeText = document.createElement("P");
+    divE.appendChild(typeText);
+    theImg.style.backgroundColor = "red";
+    theImg.className = ".page-dt-right img";
+    theImg.innerHTML = image.value;
+    typeText.innerHTML = type.value;
+    
+    hTag.innerHTML = `${date.value} and ${title.value} plus ${discription.value} and `;
+    document.querySelector(".create-container").appendChild(divE);
+    console.log(theImg);
+console.log(type.value);
+
+}
+
+createPost.addEventListener("click", create);
+
+
+
+    </script>
+    <script>
+        //loged in name interacting with sign in
+  const displayName = document.getElementById("user");
+  displayName.innerText = localStorage.getItem("username");
+      </script>
+        <!-- <script src="../Assets/javascript/data.js"></script> -->
 </body>
 </html>
