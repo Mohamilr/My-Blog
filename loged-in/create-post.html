@@ -2,96 +2,124 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>My Blog</title>
-   <link rel="stylesheet" href="../Assets/css/style.css">
-   <link rel="icon" type="image/x-icon" href="../Assets/images/favicon.jpg">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-   <!--    google font    -->
-   <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../Assets/images/favicon.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--    google font    -->
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
 </head>
-<body>
-     <header>
-      <div>
-         <nav class="navbar other-page-nav">
-            <a href="#" class="brand active">Dami's Blog</a>
-            <ul class="sublink">
-<!--             name of the loged-in user-->
-             <li id="user" class="active"><i class="far fa-user-circle"></i></li>
-               <li><a href="../loged-in/home.html">Home</a></li>
-               <li><a href="../contact.html">Contact Us</a></li>
-               <li><a href="../Archives.html">Archives</a></li>
-               <li><a href="../loged-in/create-post.html" class="active">Create post</a></li>
-            </ul>
-         </nav>
-      </div>
-   </header>
-   <main>
-   <section>
-<!--     used blogpost header style-->
-      <div><h1 class="sub-header">CREATE A POST</h1></div>
-<!--      -->
-       <div class="create-container">
-           <div  class="create-box"><h1>Date:</h1><input type="date" class="inputs"  required></div>
-           <div  class="create-box"><h1>Title:</h1><input type="text" placeholder="write a title" class="inputs" id="title" maxlength="40" required></div>
-           <div  class="create-box"><h1>Discription:</h1><input type="text" placeholder="write a short discription" class="inputs" id="discription" maxlength="40" required></div>
-           <div  class="create-box"><h1>Upload Image:</h1><input type="file" accept="image/*" id="image-upload" required></div>
-       <div>
-           <textarea name="" id="" cols="50" rows="15" placeholder="your text context goes here..." required></textarea>
-       </div>
-       <button class="create-btn">Create post</button>
-       </div>
 
-   </section>
-   </main>
-       <footer>
+<body>
+    <header>
+        <div>
+            <nav class="navbar other-page-nav">
+                <a href="#" class="brand active">Dami's Blog</a>
+                <ul class="sublink">
+                    <!--             name of the loged-in user-->
+                    <li id="user" class="active"><i class="far fa-user-circle"></i></li>
+                    <li><a href="../loged-in/home.html">Home</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
+                    <li><a href="../Archives.html">Archives</a></li>
+                    <li><a href="../loged-in/create-post.html" class="active">Create post</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <!--     used blogpost header style-->
+            <div>
+                <h1 class="sub-header">CREATE A POST</h1>
+            </div>
+            <!--      -->
+            <div class="create-container">
+                <div class="create-box">
+                    <h1>Date:</h1><input type="date" class="inputs" required>
+                </div>
+                <div class="create-box">
+                    <h1>Title:</h1><input type="text" placeholder="write a title" class="inputs" id="title"
+                        maxlength="40" required>
+                </div>
+                <div class="create-box">
+                    <h1>Discription:</h1><input type="text" placeholder="write a short discription" class="inputs"
+                        id="discription" maxlength="40" required>
+                </div>
+                <div class="create-box">
+                    <h1>Upload Image:</h1>
+                    <div class="for-upload">
+                        <input type="file" accept="image/*" id="image-upload" required
+                        onchange="onFileChange(this)">
+                        <img src="" alt="" style="height: 80px; width: 100px;"  id="imm">
+                    </div>
+                </div>
+                <div>
+                    <textarea name="" id="" cols="50" rows="15" placeholder="your text context goes here..."
+                        required></textarea>
+                </div>
+                <button class="create-btn">Create post</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
         <div class="footer-container">
             <div>
                 copywrite &copy; 2019 By Mohammed Ibrahim
             </div>
         </div>
-    </footer>  
+    </footer>
     <script>
-    //declarations
-const date = document.querySelector('input[type = "date"]');
-const title = document.querySelector("#title");
-const discription = document.querySelector("#discription");
-const image = document.querySelector('input[type = "file"]');
-const createPost = document.querySelector(".create-btn");
-const type = document.getElementsByTagName("textarea")[0];
-image.className = ".page-dt-right img";
-function create(e){
-    e.preventDefault();
-    const divE = document.createElement("div");
-    const hTag = document.createElement("h1");
-    const theImg = document.createElement("img");
-    const typeText = document.createElement("P");
-    divE.appendChild(typeText);
-    theImg.style.backgroundColor = "red";
-    theImg.className = ".page-dt-right img";
-    theImg.innerHTML = image.value;
-    typeText.innerHTML = type.value;
+        
+        //loged in name interacting with sign in
+        const displayName = document.getElementById("user");
+        displayName.innerText = localStorage.getItem("username");
     
-    hTag.innerHTML = `${date.value} and ${title.value} plus ${discription.value} and `;
-    document.querySelector(".create-container").appendChild(divE);
-    console.log(theImg);
-console.log(type.value);
+     
+        //declarations
+        const date = document.querySelector('input[type = "date"]');
+        const title = document.querySelector("#title");
+        const discription = document.querySelector("#discription");
+        const image = document.querySelector('input[type = "file"]');
+        const createPost = document.querySelector(".create-btn");
+        const text = document.getElementsByTagName("textarea")[0];
 
-}
+        function onFileChange(input) {
+            let src = window.URL.createObjectURL(input.files[0])
+            localStorage.setItem("img", src);
+            document.getElementById("imm").setAttribute("src", src);
+        }
+        
+        function create(e) {
+            e.preventDefault();
+            localStorage.setItem("date", date.value);
+            localStorage.setItem("title", title.value);
+            localStorage.setItem("discription", discription.value);
+            localStorage.setItem("text", text.value);
 
-createPost.addEventListener("click", create);
+            if(date.value.length || title.value.length || discription.value.length || text.value.length  > 0){
+                window.alert("input something")
+                window.location.href = "../loged-in/home.html";
+                
+            }
+            else{
+                window.alert("input something")
+            }
+        }
 
+        createPost.addEventListener("click", create);
 
 
     </script>
     <script>
-        //loged in name interacting with sign in
-  const displayName = document.getElementById("user");
-  displayName.innerText = localStorage.getItem("username");
-      </script>
-        <!-- <script src="../Assets/javascript/data.js"></script> -->
+        
+    </script>
+
+    <!-- <script src="../Assets/javascript/data.js"></script> -->
 </body>
+
 </html>
