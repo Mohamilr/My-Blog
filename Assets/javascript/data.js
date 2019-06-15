@@ -1,16 +1,17 @@
 //declarations
-const date = document.querySelector('input[type = "date"]');
-const title = document.querySelector("#title");
-const discription = document.querySelector("#discription");
-const image = document.querySelector('input[type = "file"]');
+// const date = document.querySelector('input[type = "date"]');
+// const title = document.querySelector("#title");
+// const discription = document.querySelector("#discription");
+// const image = document.querySelector('input[type = "file"]');
 //
+
 posts = [
     {
         id : 1,
-        title: "the book",
-        date: "02/12/19",
+        title: titl.value,
+        date: dat,
         image : "https://image url",
-        content : "lorem ipsum ..."
+        content : disc
     },
     {
         id : 2,
@@ -56,22 +57,21 @@ console.log(posts)
 // const gg = document.createElement("div"); 
 // const ff = document.querySelector(".blog-news");
 
-
+//  localStorage.getItem('user');
 
 for(let k = 0; k < posts.length; k++){
-    const jj = document.querySelector(".box");
+    // const jj = document.querySelectorAll(".box");
+    const jj = document.querySelector(".box")
     const gg = document.createElement("div"); 
-    const ff = document.querySelector(".blog-news");
-    // jj.className(".blog-news");
-    const spanElem = document.createElement('h4');
-    // spanElem.textContent = 'X';
-    spanElem.classList.add('.cont');
-    // spanElem.onclick = deleteItem;
-    jj.appendChild(gg);
-    ff.innerHTML = `<h4>${posts[k].title}</h4>
-    spanElem ${posts[k].content}
-    <div><img src="${posts[k].image}</div>
-    <h4>${posts[k].date}</h4>`
+    
+   
+    // const ff = document.querySelector(".blog-news");
+//     jj.appendChild(gg);
+//    gg.innerHTML = `<h4>${localStorage.getItem("date")}</h4>
+//     spanElem ${posts[k].content}
+//     <div>${localStorage .getItem("discription")}</div>
+//     <h4>${posts[k].date}</h4>`
+    // <img src="${localStorage.getItem("discription")}/>
 }
 
 // content.forEach(poo => {
@@ -82,24 +82,3 @@ for(let k = 0; k < posts.length; k++){
 // function getPosts() {
 //     for{}
 // }
-
-
-
-const jj = document.querySelector(".box");
-
-const del = document.querySelector(".remove");
-
-const deleteItem = (event) => {
-    event.target.parentElement.style.display = 'none';
-}
-
-function a(e){
-    e.preventDefault;
-    del.forEach(item => {
-        item.addEventListener('click', deleteItem)
-}
-    )
-}
-// document.querySelectorAll('.delete').forEach(item => {
-//     item.addEventListener('click', deleteItem)
-// });

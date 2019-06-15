@@ -34,7 +34,7 @@ function signIn(event) {
     //iterate over profile name and password
     for (let i = 0; i < profile.length; i++) {
         if (userName.value === profile[i].name && password.value === profile[i].pass) {
-            window.location.href = './loged-in/home.html';
+            window.location.href = "./loged-in/home.html";
         }
         else if (userName.value !== profile[i].name || password.value !== profile[i].pass) {
             message.textContent = "the username and password is wrong".toUpperCase();
