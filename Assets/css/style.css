@@ -4,6 +4,7 @@
     font-family: 'Quattrocento', serif;
 }
 
+/*navbar style*/
 .navbar{
     display: flex;
     justify-content: space-between; background-color:  #00c4cc; 
@@ -46,6 +47,13 @@ a{
 
 .brand:hover{
     color: #ffffff;
+}
+
+.fa-bars{
+    margin: 10px 10px;
+    font-size: 25px;
+    color: #ffffff;
+    display: none !important;
 }
 
 /*index page style*/
@@ -281,11 +289,32 @@ img{
 /*footer*/
 .footer-container{
     background-color: #00c4cc;
-    padding: 2em ;
+    padding: 2em;
     text-align: center;
 }
 
 @media only screen and (max-width: 720px) {
+  /*  navbar style  */
+    .sublink{
+        display: none;
+     }
+    
+    .toggle{
+        text-align: center;
+        position: absolute;
+        top: 2.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #00c4cc;
+        width: 100%;
+        z-index: 1;
+    }
+    
+   .fa-bars{
+        display: block !important;
+    }
+    
     /*index page*/
     
 .container{
@@ -295,7 +324,6 @@ img{
 .show{
     display: flex;
     justify-content: center;
-
 }
 
  .view{
